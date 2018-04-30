@@ -14,6 +14,7 @@ Para consumir a API é bem simples. Basta dar um `GET` na url abaixo para listar
 
 `https://api.cosmicjs.com/v1/blackwomenhistory?pretty=true&hide_metafields=true`
 
-Caso queira alguma específica, basta dar novamente um `GET` na url abaixo trocando apenas o slug (no exemplo, é a `dandara`): 
+Caso queira alguma específica, basta dar novamente um `GET` na url abaixo trocando apenas o slug 
+(no exemplo, é a `dandara`): 
 
 `https://api.cosmicjs.com/v1/blackwomenhistory/object/dandara?pretty=true&hide_metafields=true`
