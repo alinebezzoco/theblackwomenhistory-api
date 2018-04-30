@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="The Black Women History é uma REST API usando o Cosmic JS">
+    <meta author="Aline Bezzoco">
+    <meta keywords="api, feminism, woman, women, cosmicjs">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>The Black Women History API</title>
+
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Mono" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="about">
+            <img src="logo.png" alt="" class="logo">
+
+            <div class="woman-month">
+                <h1>Mulher do mês</h1>
+                <img src="" alt="" id="photo">
+                <div class="info">
+                    <p id="name"></p>
+                    <p id="description"></p>
+                    <span>Fonte: </span>
+                    <span id="credits"></span>
+                </div>
+            </div>
+
+            <div class="description">
+                <p>“Mulheres negras da história” é uma REST API usando o Cosmic JS.</p>
+                <p>Agora você pode criar conteúdos mockados e consumí-los no seu projeto e ao mesmo tempo saber mais sobre as
+                    mulheres negras incríveis do Brasil e do mundo que fizeram e ainda fazem história.</p>
+                <p>API atualizada semanalmente.</p>
+                <p>Tem alguma mulher negra que não está na API e você deseja indicar? Mande um e-mail para contato@alinebezzoco.com</p>
+            </div>
+        </div>
+        <hr />
+        <div class="how-to">
+            <h1>Como usá-la</h1>
+            <p>Para consumir a API é bem simples. Basta dar um
+                <strong>GET</strong> na url abaixo para listar todas as mulheres:</p>
+            <input type="text" value="https://api.cosmicjs.com/v1/blackwomenhistory?pretty=true&hide_metafields=true" disabled>
+            <p>Caso queira alguma específica, basta dar novamente um
+                <strong>GET</strong> na url abaixo trocando apenas o
+                <i>slug</i> (no exemplo, é a
+                <strong>dandara</strong>):</p>
+            <input type="text" value="https://api.cosmicjs.com/v1/blackwomenhistory/object/dandara?pretty=true&hide_metafields=true"
+                disabled>
+        </div>
+    </div>
+    <footer>
+        <p>Feito com amor em HTML, CSS e Vanilla JS
+            <3 | Desenvolvido por Aline Bezzoco</p>
+    </footer>
+</body>
+<script src="scripts.js"></script>
+
+</html>
