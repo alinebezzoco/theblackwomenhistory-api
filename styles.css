@@ -5,7 +5,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    color: #3e2c3a;    
+    color: #3e2c3a;
 }
 
 p {
@@ -13,38 +13,70 @@ p {
     margin-bottom: 10px;
 }
 
-span { 
+span {
     font-size: 14px;
 }
 
 .container {
-    width: 960px;
+    width: 100%;
     margin: 100px auto 0 auto;
     padding-bottom: 40px;
+    max-width: 960px;
 }
 
-.container .woman-month { 
+@media screen and (max-width: 767px) {
+    .container {
+        margin-top: 40px;
+    }
+}
+
+.container .woman-month {
     background: #f8f8f8;
     border-radius: 8px;
     padding: 20px;
-    
     overflow: auto;
 }
 
-.container .woman-month h1 { 
+@media screen and (max-width: 767px) {
+    .container .woman-month {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+.container .woman-month h1 {
     padding-bottom: 20px;
 }
 
-.container .woman-month img { 
+.container .woman-month h2 {
+    padding-bottom: 20px;
+}
+
+.container .woman-month img {
     width: 25%;
     float: left;
     margin-right: 20px;
 }
 
-.container .woman-month .info { 
+@media screen and (max-width: 767px) {
+    .container .woman-month img {
+        width: 100%;
+        margin: 20px auto;
+        display: block;
+        float: none;
+    }
+}
+
+.container .woman-month .info {
     width: 70%;
     float: right;
+}
 
+@media screen and (max-width: 767px) {
+    .container .woman-month .info {
+        width: 100%;
+        float: none;
+    }
 }
 
 .container .about img.logo {
@@ -53,16 +85,36 @@ span {
     display: block;
 }
 
+@media screen and (max-width: 767px) {
+    .container .about img.logo {
+        width: 70%;
+    }
+}
+
 .container .about .description {
     margin: 30px 0;
     text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    .container .about .description {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 }
 
 .container .how-to {
     margin: 30px 0;
 }
 
-.container .how-to input { 
+@media screen and (max-width: 767px) {
+    .container .how-to {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+.container .how-to input {
     width: 100%;
     background: #dddddd;
     border-radius: 8px;
@@ -70,13 +122,16 @@ span {
     box-shadow: none;
     border: 0;
     margin: 10px 0 20px 0;
-
     font-family: 'Roboto Mono', monospace;
-
 }
 
-footer p { 
+@media screen and (max-width: 767px) {
+    .container .how-to input {
+        width: 90%;
+    }
+}
+
+footer p {
     text-align: center;
     display: block;
-    font-size: 12px;
 }
