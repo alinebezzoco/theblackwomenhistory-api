@@ -48,10 +48,6 @@ span {
     padding-bottom: 20px;
 }
 
-.container .woman-month h2 {
-    padding-bottom: 20px;
-}
-
 .container .woman-month img {
     width: 25%;
     float: left;
@@ -77,6 +73,10 @@ span {
         width: 100%;
         float: none;
     }
+}
+
+.container .woman-month .info h2 {
+    padding-bottom: 20px;
 }
 
 .container .about img.logo {
