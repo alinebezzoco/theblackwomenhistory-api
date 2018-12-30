@@ -1,11 +1,14 @@
-fetch('https://api.cosmicjs.com/v1/blackwomenhistory/object/dandara?pretty=true&hide_metafields=true')
-    .then(response => response.json())
+
+fetch('https://theblackwomanhistory.firebaseio.com/content/28.json')
+.then(response => response.json())
     .then(data => {
-        document.getElementById("photo").src = data.object.metadata.image.url;
-        document.getElementById("name").innerHTML = data.object.title;
-        document.getElementById("description").innerHTML = data.object.content;
-        document.getElementById("credits").innerHTML = data.object.metadata.credits;
+        document.querySelector('.photo').src = data.metadata.image.url;
+        document.querySelector('.photo').alt = data.title;
+        document.querySelector('.photo').title = data.title;
+        document.querySelector('.name').innerHTML = data.title;
+        document.querySelector('.description').innerHTML = data.description;
+        document.querySelector('.credits').innerHTML = data.metadata.credits;
     })
     .catch(err => {
-        console.error('An error ocurred', err);
+        console.error('Ocorreu um erro no servidor', err);
     });
