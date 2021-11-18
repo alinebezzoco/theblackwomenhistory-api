@@ -1,5 +1,5 @@
 
-fetch('https://theblackwomanhistory.firebaseio.com/content/28.json')
+fetch('https://theblackwomanhistory.firebaseio.com/content/33.json')
 .then(response => response.json())
     .then(data => {
         document.querySelector('.photo').src = data.metadata.image.url;
