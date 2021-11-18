@@ -5,9 +5,9 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta description="The Black Women History é uma REST API usando o Cosmic JS">
+    <meta description="The Black Women History é uma REST API usando o Firebase">
     <meta author="Aline Bezzoco">
-    <meta keywords="api, feminism, woman, women, cosmicjs, black women, black woman, female, girl power">
+    <meta keywords="mulheres negras, mulher negra, black women, black woman">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title>The Black Women History API</title>
@@ -21,44 +21,45 @@
 
     <div class="container">
 
-        <img src="logo.png" alt="" class="logo">
+        <img src="logo.png" alt="The Black Women History API" class="logo">
 
         <section class="feature-woman">
             <img src="" alt="" title="" class="photo">
             <div class="info">
-                <h2 class="name"></h2>
-                <p class="description"></p>
-                <span>Fonte: </span>
-                <span class="credits"></span>
+                <h2 class="name" role="heading" aria-level="2"></h2>
+                <p class="description" role="text"></p>
+                <span role="text">Fonte: </span>
+                <span class="credits" role="text"></span>
             </div>
         </section>
 
         <section class="about">
-            <p>“Mulheres negras da história” é uma REST API usando o Firebase.</p>
-            <p>Agora você pode criar conteúdos mockados e consumí-los no seu projeto e ao mesmo tempo saber mais
+            <p role="text">“Mulheres negras da história” é uma REST API usando o Firebase.</p>
+            <p role="text">Agora você pode criar conteúdos mockados e consumí-los no seu projeto e ao mesmo tempo saber mais
                 sobre
                 as mulheres negras incríveis do Brasil e do mundo que fizeram e ainda fazem história.</p>
-            <p>Tem alguma mulher negra que não está na API e você deseja indicar? Mande um e-mail para
+            <p role="text">Tem alguma mulher negra que não está na API e você deseja indicar? Mande um e-mail para
                 <a href="mailto:contato@alinebezzoco.com">contato@alinebezzoco.com</a></p>
         </section>
 
         <hr />
 
         <section class="how-to">
-            <h2>Como usá-la</h2>
-            <p>Para consumir a API é bem simples. Basta dar um
+            <h2 role="heading" aria-level="2">Como usá-la</h2>
+            <p role="text">Para consumir a API é bem simples. Basta dar um
                 <strong>GET</strong> na url abaixo para listar todas as mulheres:</p>
-            <p>Para visualizar a lista no browser:</p>
-            <code>https://theblackwomanhistory.firebaseio.com/.json?print=pretty</code>
-            <p>Caso queira alguma específica, basta dar novamente um
+            <code role="text">https://theblackwomanhistory.firebaseio.com/.json</code>
+            <p role="text">Para visualizar a lista no browser:</p>
+            <code role="text">https://theblackwomanhistory.firebaseio.com/.json?print=pretty</code>
+            <p role="text">Caso queira alguma específica, basta dar novamente um
                 <strong>GET</strong> na url abaixo trocando apenas o
                 id:</strong></p>
-            <code>https://theblackwomanhistory.firebaseio.com/content/28.json</code>
+            <code role="text">https://theblackwomanhistory.firebaseio.com/content/28.json</code>
         </section>
     </div>
 
     <footer>
-        <p>Feito com amor em HTML, CSS e Vanilla JS | Desenvolvido por <strong>Aline Bezzoco</strong></p>
+        <p role="text">Feito com amor em HTML, CSS e Vanilla JS | Desenvolvido por <strong>Aline Bezzoco</strong></p>
     </footer>
 
 </body>
